@@ -11,7 +11,7 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Cubing Test Server');
 });
 
-app.get('/scrable', async (req: Request, res: Response) => {
+app.get('/scramble', async (req: Request, res: Response) => {
     const scramble = await randomScrambleForEvent("333");
     scramble.log();
     res.send(scramble.toString());
